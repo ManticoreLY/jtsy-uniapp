@@ -1,0 +1,77 @@
+$size: 25upx;
+$margin: 1.2$size;
+$padding: .8$size;
+$width: calc(100% - 50px);
+$shadow: 0px 0px 11px 5px rgba(230, 230, 244, 0.2);
+$font-color: #C2C2C2
+input.line{
+	width: 24$size;
+	height: 4$size;
+	background: #F6F8FD;
+	border-radius: 50%;
+	padding:0 1$size;
+}
+button.big{
+	width: 26upx;
+	height: 4$size;
+	background: linear-gradient(-90deg, #0ACFFE 0%, #495AFF 100%);
+	box-shadow: 0px 2px 24px 0px rgba(47, 176, 244, 0.3);
+	border-radius: 2$size;
+}
+.regular-fontcolor{
+	color: $font-color;
+}
+.line-width{
+	width: 26$size;
+	margin: 0 auto
+}
+// 常用flex布局的四种规式
+.flex-row-center{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-row-between{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex-column-center{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-column-between{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+// 常用块的样式设置
+.block{
+	width: $width;
+	margin: $margin;
+	padding: $padding;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: $shadow;
+	background: rgba(248, 248, 248. .9);
+}
+
+// 时间标签
+.label-time{
+	margin: 40px auto 20px;
+	width: 207px;
+	height: 17px;
+	font-size: 22px;
+	font-family: PingFang SC;
+	font-weight: 500;
+	color: #999999;
+	line-height: 24px;
+}
